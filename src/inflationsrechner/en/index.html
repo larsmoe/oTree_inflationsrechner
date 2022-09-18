@@ -1,0 +1,969 @@
+<!-- ! © Statistisches Bundesamt (Destatis), 2017 Reproduction and distribution, also of parts, are permitted provided that the source is mentioned. | https://www.destatis.de/imprint -->
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihr persönlicher Inflationsrechner</title>
+    <meta name="description"
+        content="With the Personal Inflation Calculator you can find out how much the purchasing power of your money has fallen. Use your personal purchasing pattern to calculate how the inflation rate developed over the past few years.">
+    <!--  Essential META Tags -->
+    <meta property="og:title"
+        content="With the Personal Inflation Calculator you can find out how much the purchasing power of your money has fallen. Use your personal purchasing pattern to calculate how the inflation rate developed over the past few years.">
+    <meta property="og:description"
+        content="With the Personal Inflation Calculator you can find out how much the purchasing power of your money has fallen. Use your personal purchasing pattern to calculate how the inflation rate developed over the past few years.">
+    <meta property="og:image"
+        content="https://service.destatis.de/inflationsrechner/img/thumbnail.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card"
+        content="With the Personal Inflation Calculator you can find out how much the purchasing power of your money has fallen. Use your personal purchasing pattern to calculate how the inflation rate developed over the past few years.">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:site_name" content="DESTATIS">
+    <meta name="twitter:image:alt"
+        content="With the Personal Inflation Calculator you can find out how much the purchasing power of your money has fallen. Use your personal purchasing pattern to calculate how the inflation rate developed over the past few years.">
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta name="twitter:site" content="@destatis">
+    <!-- Favicons -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="/inflationsrechner/img/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="/inflationsrechner/img/favicon.ico" sizes="any" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="mask-icon" href="/inflationsrechner/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="/inflationsrechner/site.webmanifest">
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/inflationsrechner/img/browserconfig.xml">
+    <style>
+        html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:0.67em 0}main{display:block}a{background-color:transparent}small{font-size:80%}img{border-style:none}svg:not(:root){overflow:hidden}button,input,select{margin:0}button{overflow:visible;text-transform:none}button,[type="submit"]{-webkit-appearance:button}input{overflow:visible}select{text-transform:none}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:0.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}details{display:block}summary{display:list-item}html{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:100%}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}body{margin:0;padding:0;background:#fefefe;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-weight:normal;line-height:1.5;color:#0a0a0a;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{display:inline-block;vertical-align:middle;max-width:100%;height:auto;-ms-interpolation-mode:bicubic}select{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;border-radius:0}button{padding:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;border-radius:0;background:transparent;line-height:1}button,input,select{font-family:inherit}.grid-container{padding-right:0.625rem;padding-left:0.625rem;max-width:75rem;margin-left:auto;margin-right:auto}@media print,screen and (min-width:40em){.grid-container{padding-right:0.9375rem;padding-left:0.9375rem}}.grid-x{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap}.cell{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;min-height:0px;min-width:0px;width:100%}.grid-x>.small-3,.grid-x>.small-4,.grid-x>.small-5,.grid-x>.small-8,.grid-x>.small-12{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}@media print,screen and (min-width:40em){.grid-x>.medium-6{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}}@media print,screen and (min-width:64em){.grid-x>.large-6,.grid-x>.large-7{-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}}.grid-x>.small-3,.grid-x>.small-4,.grid-x>.small-5,.grid-x>.small-8,.grid-x>.small-12{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.grid-x>.small-3{width:25%}.grid-x>.small-4{width:33.33333%}.grid-x>.small-5{width:41.66667%}.grid-x>.small-8{width:66.66667%}.grid-x>.small-12{width:100%}@media print,screen and (min-width:40em){.grid-x>.medium-6{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.grid-x>.medium-6{width:50%}}@media print,screen and (min-width:64em){.grid-x>.large-6,.grid-x>.large-7{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.grid-x>.large-6{width:50%}.grid-x>.large-7{width:58.33333%}}.grid-padding-x .grid-padding-x{margin-right:-0.625rem;margin-left:-0.625rem}@media print,screen and (min-width:40em){.grid-padding-x .grid-padding-x{margin-right:-0.9375rem;margin-left:-0.9375rem}}.grid-container:not(.full)>.grid-padding-x{margin-right:-0.625rem;margin-left:-0.625rem}@media print,screen and (min-width:40em){.grid-container:not(.full)>.grid-padding-x{margin-right:-0.9375rem;margin-left:-0.9375rem}}.grid-padding-x>.cell{padding-right:0.625rem;padding-left:0.625rem}@media print,screen and (min-width:40em){.grid-padding-x>.cell{padding-right:0.9375rem;padding-left:0.9375rem}}.small-offset-5{margin-left:41.66667%}@media print,screen and (min-width:64em){.large-offset-3{margin-left:25%}}.grid-padding-y>.cell{padding-top:0.625rem;padding-bottom:0.625rem}@media print,screen and (min-width:40em){.grid-padding-y>.cell{padding-top:0.9375rem;padding-bottom:0.9375rem}}div,ul,li,h1,h2,h3,h4,h5,form,p{margin:0;padding:0}p{margin-bottom:1rem;font-size:inherit;line-height:1.6;text-rendering:optimizeLegibility}small{font-size:80%;line-height:inherit}h1,h2,h3,.h3,h4,h5,.h5,.h6{font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-style:normal;font-weight:normal;color:inherit;text-rendering:optimizeLegibility}h1{font-size:1.5rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}h2{font-size:1.25rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}h3,.h3{font-size:1.1875rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}h4{font-size:1.125rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}h5,.h5{font-size:1.0625rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}.h6{font-size:1rem;line-height:1.4;margin-top:0;margin-bottom:0.5rem}@media print,screen and (min-width:40em){h1{font-size:3rem}h2{font-size:2.5rem}h3,.h3{font-size:1.9375rem}h4{font-size:1.5625rem}h5,.h5{font-size:1.25rem}.h6{font-size:1rem}}a{line-height:inherit;color:#1779ba;text-decoration:none}ul{margin-bottom:1rem;list-style-position:outside;line-height:1.6}li{font-size:inherit}ul{margin-left:1.25rem;list-style-type:disc}.text-left{text-align:left}.text-right{text-align:right}.button{display:inline-block;vertical-align:middle;margin:0 0 1rem 0;padding:0.85em 1em;border:1px solid transparent;border-radius:0;font-family:inherit;font-size:0.9rem;-webkit-appearance:none;line-height:1;text-align:center}.button{background-color:#1779ba;color:#fefefe}.button.primary{background-color:#1779ba;color:#fefefe}[type='text']{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:2.4375rem;margin:0 0 1rem;padding:0.5rem;border:1px solid #cacaca;border-radius:0;background-color:#fefefe;-webkit-box-shadow:inset 0 1px 2px rgba(10,10,10,0.1);box-shadow:inset 0 1px 2px rgba(10,10,10,0.1);font-family:inherit;font-size:1rem;font-weight:normal;line-height:1.5;color:#0a0a0a;-webkit-appearance:none;-moz-appearance:none;appearance:none}[type='submit']{-webkit-appearance:none;-moz-appearance:none;appearance:none;border-radius:0}::-webkit-input-placeholder{color:#cacaca}::-moz-placeholder{color:#cacaca}:-ms-input-placeholder{color:#cacaca}::-ms-input-placeholder{color:#cacaca}::placeholder{color:#cacaca}label{display:block;margin:0;font-size:0.875rem;font-weight:normal;line-height:1.8;color:#0a0a0a}label.middle{margin:0 0 1rem;padding:0.5625rem 0}select{height:2.4375rem;margin:0 0 1rem;padding:0.5rem;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:1px solid #cacaca;border-radius:0;background-color:#fefefe;font-family:inherit;font-size:1rem;font-weight:normal;line-height:1.5;color:#0a0a0a;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");background-origin:content-box;background-position:right -1rem center;background-repeat:no-repeat;background-size:9px 6px;padding-right:1.5rem}@media screen and (min-width:0\0){select{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg==")}}select::-ms-expand{display:none}select:not([multiple]){padding-top:0;padding-bottom:0}.form-error{display:none;margin-top:-0.5rem;margin-bottom:1rem;font-size:0.75rem;font-weight:bold;color:#cc4b37}.accordion{margin-left:0;background:#fefefe;list-style-type:none}.accordion-title{position:relative;display:block;padding:1.25rem 1rem;border:1px solid #e6e6e6;border-bottom:0;font-size:0.75rem;line-height:1;color:#1779ba}.accordion-title::before{position:absolute;top:50%;right:1rem;margin-top:-0.5rem;content:"+"}.is-active>.accordion-title::before{content:"–"}.accordion-content{display:none;padding:1rem;border:1px solid #e6e6e6;border-bottom:0;background-color:#fefefe;color:#0a0a0a}.card{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;margin-bottom:1rem;border:1px solid #e6e6e6;border-radius:0;background:#fefefe;-webkit-box-shadow:none;box-shadow:none;overflow:hidden;color:#0a0a0a}.card>:last-child{margin-bottom:0}.card-section{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;padding:1rem}.card-section>:last-child{margin-bottom:0}.menu{padding:0;margin:0;list-style:none;position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.menu a{line-height:1;text-decoration:none;display:block;padding:0.7rem 1rem}.menu a{margin-bottom:0}.menu{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}.menu.vertical{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.menu.simple{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}@media print,screen and (min-width:40em){.menu.medium-horizontal{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row}}.menu .menu-text{padding:0.7rem 1rem;font-weight:bold;line-height:1;color:inherit}.top-bar{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding:0.5rem;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.top-bar,.top-bar ul{background-color:#e6e6e6}.top-bar .top-bar-left,.top-bar .top-bar-right{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}@media print,screen and (min-width:40em){.top-bar{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}.top-bar .top-bar-left{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;margin-right:auto}.top-bar .top-bar-right{-webkit-box-flex:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;margin-left:auto}}@media print,screen and (max-width:63.99875em){.top-bar.stacked-for-medium{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.top-bar.stacked-for-medium .top-bar-left,.top-bar.stacked-for-medium .top-bar-right{-webkit-box-flex:0;-webkit-flex:0 0 100%;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}.top-bar-left,.top-bar-right{-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.hide{display:none!important}@media print,screen and (min-width:64em){.hide-for-large{display:none!important}}@media screen and (max-width:63.99875em){.show-for-large{display:none!important}}.show-for-sr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}@font-face{font-family:'Statis Sans';font-display:swap;src:url('/inflationsrechner/fonts/StatisSans-Regular.woff2') format('woff2'),url('/inflationsrechner/fonts/StatisSans-Regular.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'Statis Sans';font-display:swap;src:url('/inflationsrechner/fonts/StatisSans-Bold.woff2') format('woff2'),url('/inflationsrechner/fonts/StatisSans-Bold.woff') format('woff');font-weight:700;font-style:normal}body{font-family:'Statis Sans',sans-serif;background-color:#f3f3f3;color:#121212}h1,h2,h3,.h3,h4,h5,.h5,.h6{font-family:"Statis Sans",sans-serif;font-weight:700;line-height:1.1}.grid-container{padding-left:1rem;padding-right:1rem}.menu a,main a{color:#005483}main .menu a,p a{text-decoration:underline}.top-bar{padding:0.5rem}nav.top-bar{border-bottom:1px #c8c8c8 solid}.top-bar,.top-bar ul{background-color:transparent}.top-bar .top-bar-left,.top-bar .top-bar-right{flex:0 0 auto}.top-bar-right a{color:#121212}.top-bar .menu .menu-text{padding:0.7rem 0.5rem}.hero h1{margin-top:0.1em;margin-bottom:0.4em}.hero p.h5{font-weight:initial;line-height:1.675em}.js-official-change{margin-bottom:0}.card{border:none;background:#fff;border-radius:4px}#container{height:400px}input[type='text']{background-color:#c2eefa;border-radius:4px;font-weight:700;text-align:right;width:initial;max-width:100%}form label{color:#1e1e1e;line-height:1.6;font-size:1rem}.text-right.middle{font-style:italic}.text-right.middle.myRest{font-style:normal}.right{display:flex;justify-content:flex-end}p.middle{margin:0 0 1rem;padding:.5625rem 0}@media screen and (max-width:39.9375em){.button.small-only-expanded{display:block;width:100%;margin-right:0;margin-left:0}}.button{font-weight:700;border-radius:4px}.button.primary{border:2px solid #005483;background-color:#005483;color:#fefefe}.accordion{background:none}.accordion-content{border:none}.accordion-title{border-radius:4px;border:2px solid #006298;background:#fff;color:#006298;font-size:1rem;font-weight:700;padding:1rem}.accordion-title::before{position:absolute;top:50%;right:1rem;margin-top:-0.5rem;content:"+"}.is-active>.accordion-title::before{content:"–"}details{margin-bottom:1rem}.details-summary{color:#006298}.details-summary .summary-text{text-decoration:underline}.details-text{padding:9px 20px 0 19px;border-left:3px solid #121212;;}.footer-top a{color:#fff;text-decoration:underline}footer .menu a{padding:0 1rem 0 0}.footer-top{background:#006298;color:#fff}.footer-bottom a{font-weight:700;color:#121212;text-decoration:underline}.no-js main{display:none}
+    </style>
+    <!-- Helps prevent duplicate content issues -->
+    <link rel="canonical" href="https://service.destatis.de/inflationsrechner/">
+    <link rel="alternate" href="https://service.destatis.de/inflationsrechner/EN/" hreflang="en" />
+    <link rel="preconnect" href="fonts" crossorigin>
+    <link rel="preload" href="/inflationsrechner/fonts/StatisSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/inflationsrechner/fonts/StatisSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- We use the full link to the CSS file in the rest of the tags -->
+    <!-- <link rel="preload" as="style" href="css/app.min.css" /> -->
+ 
+    <link rel="stylesheet" href="/inflationsrechner/css/app.min.css" media="print" onload="this.media='all'">
+
+    <noscript>
+        <link rel="stylesheet" href="/inflationsrechner/css/app.min.css">
+    </noscript>
+    <!-- Matomo -->
+    <script>
+        var _paq = _paq || [];
+        _paq.push(['disableCookies']);
+        _paq.push(['setDocumentTitle', document.domain + "/" + document.title]);
+        _paq.push(['enableHeartBeatTimer', 30]);
+        _paq.push(['addDownloadExtensions', "mp4|mp4b"]);
+        _paq.push(['setDomains', '*.destatis.de']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "//piwik.itzbund.de/";
+            _paq.push(['setTrackerUrl', u + 'js/']);
+            _paq.push(['setSiteId', 58]);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'js/';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+
+<body>
+    <nav class="top-bar grid-container">
+        <div class="top-bar-left">
+            <ul class="menu simple">
+                <li class="menu-text">Inflation Calculator</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <a href="https://destatis.de" class="show-for-large">
+                        <svg x="0px" y="0px" width="18" height="15" viewBox="0 0 509 452">
+                            <g>
+                                <rect x="5" y="40" fill="#1D1D1B" width="107" height="298" />
+                                <polygon fill="#CD1531" points="199,338 199,110 306,110 306,337.938" />
+                                <rect x="397" fill="#FCC200" width="107" height="338" />
+                                <rect y="376" fill="#B1B1B1" width="509" height="76" />
+                            </g>
+                        </svg> Statistisches Bundesamt (Destatis)
+                        <span class="show-for-sr">Opens Destatis Homepage</span>
+                    </a>
+                    <a href="https://destatis.de" class="hide-for-large">
+                        <svg x="0px" y="0px" width="18" height="15" viewBox="0 0 509 452">
+                            <g>
+                                <rect x="5" y="40" fill="#1D1D1B" width="107" height="298" />
+                                <polygon fill="#CD1531" points="199,338 199,110 306,110 306,337.938" />
+                                <rect x="397" fill="#FCC200" width="107" height="338" />
+                                <rect y="376" fill="#B1B1B1" width="509" height="76" />
+                            </g>
+                        </svg>
+                        <span class="show-for-sr">Opens Destatis homepage</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <noscript>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="large-6 small-12 cell large-offset-3">
+                    <div class="card">
+                        <div class="card-section">
+                            <h1 class="h3">JavaScript required</h1>
+                        </div>
+                        <div class="card-section">
+                            <p class>We are sorry, but this Application requires 
+                                Javascript. In case you want to refrain from JavaScript, please visit the <a
+                                    href="https://www.destatis.de/EN/Themes/Economy/Prices/Consumer-Price-Index/_node.html"
+                                    rel="noopener noreferrer">landing page</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+    <main class="grid-container">
+
+        <div class="grid-x grid-padding-x grid-padding-y hero">
+
+            <div class="large-7 cell">
+                <h1>Personal  <br>Inflation Calculator</h1>
+                <p class="h5">This calculator allows you to compare the official inflation rate with your personal inflation rate.
+                </p>
+                <!-- <p class="h5">Mit dem Persönlichen Inflationsrechner können Sie die <span class="average">durchschnittlichen Konsumgewohnheiten</span> deutscher Haushalte mit Ihren <span class="personal">eigenen Konsumgewohnheiten</span> vergleichen.
+                </p> -->
+            </div>
+            <!-- <div class="large-7 cell">
+                <img src="https://via.placeholder.com/1024x576.png" alt="">
+            </div> -->
+
+        </div>
+
+
+        <div class="grid-x grid-padding-x grid-padding-y">
+
+            <div class="large-6 small-12 cell">
+                <!-- <p>Meine persönlichen monatlichen Konsumausgaben insgesamt in Euro</p> -->
+                <form id="ausgaben" data-abide novalidate>
+                    <div class="accordion" data-accordion data-allow-all-closed="true" data-deep-link="true"
+                        data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500"
+                        id="deeplinked-accordion">
+                        <div class="card">
+                            <div class="card-section">
+                                <h2 class="h3">Expenditure</h2>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-8 cell">
+                                        <label for="spending" class="text-left middle">My total monthly consumption expenditure in euro</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="spending" name="spending" maxlength="8" size="8"
+                                            inputmode="decimal" pattern="number" required>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="spending"
+                                            data-form-error-on="required">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="spending"
+                                            data-form-error-on="pattern">Please enter only numbers.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <details>
+                                            <summary class="details-summary">
+                                                <span class="summary-text">
+                                                    Aid for consumption expenditure
+                                                </span>
+                                            </summary>
+                                            <div class="details-text">
+                                                Final consumption expenditure comprises all actual domestic expenditure on goods and services. Saving is not included.
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                                <p>Please enter below how your monthly consumption expenditure is distributed among the goods sectors. In the sum including “Rest” you should come to the euro amount of your consumption expenditure entered.
+                                </p>
+                                <!-- <legend>Meine persönlichen monatlichen Konsumausgaben insgesamt in Euro</legend>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <input type="text" id="spending" name="spending" maxlength="7" size="7" inputmode="decimal" required pattern="number" data-validator="rest">
+                                        <span class="form-error">
+                                            Please enter a number
+                                        </span>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        <div class="card accordion-item is-active" data-accordion-item>
+                            <a href="#ernaehrung" class="accordion-title">Food, beverages, restaurants</a>
+                            <div class="accordion-content" data-tab-content id="ernaehrung">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-01" class="text-left middle">Food</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-01">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-01" name="CC13-01" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-01"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-01"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class=details-summary>
+                                        <span class=summary-text>
+                                            Aid for food
+                                        </span>
+                                    </summary>
+                                    <div class=details-text>
+                                        In this section you can record all the monthly expenses you spend on food and non-alcoholic beverages. Further information can be found in the publication programme under the SEA-CPI no. 01.
+                                    </div>
+                                </details>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-021" class="text-left middle">Alcohol</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-021">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-021" name="CC13-021" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-021"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-021"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-1111" class="text-left middle">Restaurants & Cafés</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-1111">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-1111" name="CC13-1111" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-1111"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-1111"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item" data-accordion-item>
+                            <a href="#wohnen" class="accordion-title">Housing</a>
+                            <div class="accordion-content" data-tab-content id="wohnen">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-0411" class="text-left middle">Net rent</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-0411">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-0411" name="CC13-0411" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-0411"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-0411"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-0452" class="text-left middle">Gas</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-0452">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-0452" name="CC13-0452" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-0452"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-0452"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-0453" class="text-left middle">Heating oil</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-0453">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-0453" name="CC13-0453" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-0453"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-0453"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-0451" class="text-left middle">Electricity</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-0451">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-0451" name="CC13-0451" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-0451"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-0451"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item" data-accordion-item>
+                            <a href="#mobilitaet" class="accordion-title">Mobility</a>
+                            <div class="accordion-content" data-tab-content id="mobilitaet">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-072" class="text-left middle">Fuels</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-072">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-072" name="CC13-072" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-072"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-072"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class="details-summary">
+                                        <span class="summary-text">
+                                            Aid for fuels
+                                        </span>
+                                    </summary>
+                                    <div class="details-text">
+                                        In this section you can record all monthly expenses related to the maintenance of your car. This includes costs for petrol or diesel or other fuels. Repairs, spare parts and new tyres also belong to this category. Parking costs and car washing are also recorded here. In the publication programme, this item is designated as "Goods and services for vehicles", SEA CPI No. 072.
+                                    </div>
+                                </details>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-0711" class="text-left middle">Car purchase</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-0711">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-0711" name="CC13-0711" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-0711"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-0711"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class="details-summary">
+                                        <span class="summary-text">
+                                            Aid for car purchase
+                                        </span>
+                                    </summary>
+                                    <div class="details-text">
+                                        Please enter here how much you spend on average per month on new and used car purchases (only passenger cars). Camper, trailers or even boats do not fall into this category. Bicycles and motorcycles are also excluded. In the publication programme, this item is designated as "Passenger cars (excluding campers)", SEA CPI No. 0711.
+                                    </div>
+                                </details>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-073" class="text-left middle">Public transport</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-073">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-073" name="CC13-073" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-073"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-073"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class="details-summary">
+                                        <span class="summary-text">
+                                            Aid for public transport
+                                        </span>
+                                    </summary>
+                                    <div class="details-text">
+                                        Enter here your average expenditure incurred on local and long-distance public transport. This applies to train and bus journeys, but also to flights and taxi journeys. Not covered are ambulance transports. In the publication programme, this item is designated as "Transport services", SEA CPI No. 073.
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="card accordion-item" data-accordion-item>
+                            <a href="#freizeit" class="accordion-title">Recreation</a>
+                            <div class="accordion-content" data-tab-content id="freizeit">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="Freizeit" class="text-left middle">Recreation & culture</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="Freizeit">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="Freizeit" name="Freizeit" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class="details-summary">
+                                        <span class="summary-text">
+                                            Aid for recreation & culture
+                                        </span>
+                                    </summary>
+                                    <div class="details-text">
+                                        Here you should declare all expenses incurred in connection with your leisure activities. This includes concert tickets as well as membership fees from the gym or broadcasting fees, just to name a few. The exact breakdown of which services are covered here can be found in the publications under SEA CPI No 0941 "Sporting and recreational services" and SEA CPI No 0942 "Cultural services".
+                                    </div>
+                                </details>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="Freizeit"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="Freizeit"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-096" class="text-left middle">Package holidays</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-096">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-096" name="CC13-096" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-096"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-096"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion-item" data-accordion-item>
+                            <a href="#lifestyle" class="accordion-title">Lifestyle</a>
+                            <div class="accordion-content" data-tab-content id="lifestyle">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-03" class="text-left middle">Clothing</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-03">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-03" name="CC13-03" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-03"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-03"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-083"
+                                            class="text-left middle">Communication</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-083">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-083" name="CC13-083" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-083"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-083"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="Elektro" class="text-left middle">Electrical appliances</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="Elektro">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="Elektro" name="Elektro" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary class="details-summary">
+                                        <span class="summary-text">
+                                            Aid for electrical appliances
+                                        </span>
+                                    </summary>
+                                    <div class="details-text">
+                                        are a mixed position of, among others, electrical household appliances, TV sets, computers and telephones.
+                                    </div>
+                                </details>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="Elektro"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="Elektro"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-121" class="text-left middle">Personal care</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-121">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-121" name="CC13-121" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-121"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-121"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-06" class="text-left middle">Health</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-06">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-06" name="CC13-06" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-06"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-06"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label for="CC13-022" class="text-left middle">Tobacco</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="CC13-022">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <input type="text" id="CC13-022" name="CC13-022" maxlength="6" size="6"
+                                            inputmode="decimal" pattern="number" data-validator="rest">
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <span class="form-error" data-form-error-for="CC13-022"
+                                            data-form-error-on="pattern">Please enter a number</span>
+                                        <span class="form-error" data-form-error-for="CC13-022"
+                                            data-form-error-on="rest">Please enter a lower number. The sum of your inputs including "Rest" is bigger than your consumption expenditure.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-section">
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-3 small-offset-5 cell right">
+                                        <label class="middle">official</label>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <label class="middle">individual</label>
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-5 cell">
+                                        <label class="text-left middle">Rest</label>
+                                    </div>
+                                    <div class="small-3 cell">
+                                        <p class="text-right middle" data-index-number="REST">&nbsp;</p>
+                                    </div>
+                                    <div class="small-4 cell right">
+                                        <p class="text-right middle myRest" data-index-number="myRest">&nbsp;</p>
+                                        <!-- <input type="text" id="REST" name="REST" readonly="readonly"> -->
+                                    </div>
+                                </div>
+                                <div class="grid-x grid-padding-x">
+                                    <div class="small-12 cell">
+                                        <details>
+                                            <summary class="details-summary">
+                                                <span class="summary-text">
+                                                    Aid for rest
+                                                </span>
+                                            </summary>
+                                            <div class="details-text">
+                                                Rest includes all areas for which no expenditure was requested above. These include, for example, furniture, household textiles, education and insurance services.
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button type="submit" class="button primary small-only-expanded js-calc">Berechnen</button> -->
+                        <button type="submit" name="calc" value="#result"
+                            class="button primary small-only-expanded">Calculate</button>
+                        <!-- <button type="reset" class="button secondary hollow small-only-expanded js-reset">Zurücksetzen</button> -->
+                    </div>
+                </form>
+            </div>
+
+            <div class="large-6 small-12 cell">
+                <div id="result" class="card">
+                    <div class="card-section">
+                        <h3>Personal inflation rate</h3>
+                        <h4 class="h3 js-personal-change">-.- %</h4>
+                        <p class="js-official-change">&nbsp;</p>
+                        <p class="js-change">&nbsp;</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-section">
+                        <h4>Consumer Price Index (CPI)</h4>
+                        <p>2015 = 100</p>
+                        <label>CPI for individual products
+                            <select>
+                                <option selected value="none">Select a type of goods</option>
+                                <option value="CC13-01">Food</option>
+                                <option value="CC13-021">Alcohol</option>
+                                <option value="CC13-1111">Restaurants & Cafés</option>
+                                <option value="CC13-0411">Net rent</option>
+                                <option value="CC13-0452">Gas</option>
+                                <option value="CC13-0453">Heating oil</option>
+                                <option value="CC13-0451">Electricity</option>
+                                <option value="CC13-072">Fuels</option>
+                                <option value="CC13-0711">Car purchase</option>
+                                <option value="CC13-073">Public transport</option>
+                                <option value="Freizeit">Recreation & culture</option>
+                                <option value="CC13-096">Package holidays</option>
+                                <option value="CC13-03">Clothing</option>
+                                <option value="CC13-083">Communication</option>
+                                <option value="Elektro">Electrical appliances</option>
+                                <option value="CC13-121">Personal care</option>
+                                <option value="CC13-06">Health</option>
+                                <option value="CC13-022">Tobacco</option>
+                            </select>
+                        </label>
+                        <div id="container"></div>
+                        <!-- <div class="loader">Loading...</div> -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="grid-x grid-padding-x grid-padding-y">
+            <div class="large-6 cell">
+                <!-- <h4>Funktionsweise des persönlichen Inflationsrechners</h4> -->
+                <h4>Explanation</h4>
+                <h5>Inflation rate</h5>
+                <p>
+                    Inflation is not a fixed term, it is commonly used to describe a sustained rise in price levels over several periods. Inflation can be measured, inter alia, by the Consumer Price Index for Germany (CPI). The CPI is calculated and published monthly by the Federal Statistical Office.
+                </p>
+                <p>
+                    The percentage change in the CPI compared to the same period of the previous year is often referred to as the inflation rate. It is a measure of how the prices for private consumption expenditure in Germany change on average within a year. The terms „price increase“ and „rate of price increase“ are used synonymously.
+                </p>
+                <h5>Consumer price index</h5>
+                <p>
+                    The consumer price index for Germany (CPI) measures the average price change of all goods and services purchased by house­holds for consumption purposes. To compute the CPI, the average price development for each type of goods is weighted by a share of expenditure in relation to the base year. This proportion is derived from the average expenditure of all households in Germany on this type of goods.
+                    The <a
+                        href="https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/Methoden/Downloads/waegungsschema-2015.pdf?__blob=publicationFile">weighting pattern</a> provides an overview of all types of goods, including their share of expenditure in per thousand.
+                </p>
+                <h5>Personal inflation rate</h5>
+                <p>
+                    How much an individual household is affected by inflation always depends on how much money it spends on which goods. For example, if you don’t have a car, you won’t spend money on fuels and vehicle maintenance – but these are part of the consumer price index basket. The personal inflation calculator offers the possibility to adjust individual goods sectors according to one's own consumption behavior and to calculate a personal inflation rate.
+                </p>
+                <h4>More information</h4>
+                <ul class="vertical menu">
+                    <li>
+                        <a
+                            href="https://www.destatis.de/EN/Themes/Economy/Prices/Consumer-Price-Index/_node.html">Consumer price index and inflation rate – Theme page</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.destatis.de/EN/Themes/Economy/Prices/Consumer-Price-Index/price-kaleidoscope-overview.html">Price Kaleidoscope</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.destatis.de/EN/Themes/Economy/Short-Term-Indicators/Pricemonitor/pricemonitor.html">Price Monitor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="grid-container">
+                <section class="grid-x grid-padding-x grid-padding-y">
+                    <div class="large-6 medium-6 cell">
+                        <h3 class="h6">Contact</h3>
+                        <p>Statistisches Bundesamt<br>
+                            Gustav-Stresemann-Ring 11<br>
+                            65189 Wiesbaden</p>
+                        <p><a class="contact" href="https://www.destatis.de/EN/Service/Contact/_Contact.html">Contact Form</a></p>
+                    </div>
+                    <div class="large-6 medium-6 cell">
+                        <h3 class="h6">Follow us!</h3>
+                        <ul class="menu large-4 cell">
+                            <li>
+                                <a class="footer-icon" href="https://twitter.com/destatis_news" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg"
+                                        fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                                        stroke-miterlimit="1.414">
+                                        <g fill="#fff" fill-rule="nonzero">
+                                            <path
+                                                d="M22.55 45C10.05 45-.05 34.9-.05 22.5S10.05 0 22.55 0c12.5 0 22.5 10.1 22.5 22.5-.1 12.4-10.1 22.5-22.5 22.5zm0-43c-11.4 0-20.6 9.2-20.6 20.5S11.15 43 22.55 43c11.4 0 20.5-9.2 20.5-20.5S33.85 2 22.55 2z">
+                                            </path>
+                                            <path
+                                                d="M18.65 32.6c8.7 0 13.7-7.4 13.4-14 .9-.7 1.7-1.5 2.4-2.4-.8.4-1.8.6-2.7.7 1-.6 1.7-1.5 2.1-2.6-.9.5-1.9.9-3 1.1-.9-.9-2.1-1.5-3.4-1.5-3 0-5.3 2.8-4.6 5.8-3.9-.2-7.4-2.1-9.7-4.9-1.2 2.1-.6 4.9 1.5 6.3-.8 0-1.5-.2-2.1-.6-.1 2.2 1.5 4.2 3.8 4.7-.7.2-1.4.2-2.1.1.6 1.9 2.3 3.2 4.4 3.3-2 1.6-4.5 2.2-7 2 1.9 1.2 4.4 2 7 2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="show-for-sr">External link Destatis on Twitter (Opens new window)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon" href="https://www.youtube.com/user/destatis" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="45" height="45" viewBox="0 0 45 45" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                                        <g id="Group-16-Copy">
+                                            <path
+                                                d="M22.5,45c-12.4,0 -22.5,-10.1 -22.5,-22.5c0,-12.4 10.1,-22.5 22.5,-22.5c12.4,0 22.5,10.1 22.5,22.5c0,12.4 -10.1,22.5 -22.5,22.5Zm0,-43c-11.3,0 -20.5,9.2 -20.5,20.5c0,11.3 9.2,20.5 20.5,20.5c11.3,0 20.5,-9.2 20.5,-20.5c0,-11.3 -9.2,-20.5 -20.5,-20.5Z"
+                                                style="fill:#fff;fill-rule:nonzero;"></path>
+                                            <path
+                                                d="M35.8,15.3c-0.3,-1.2 -1.3,-2.2 -2.5,-2.5c-2.2,-0.6 -11.1,-0.6 -11.1,-0.6c0,0 -8.9,0 -11.1,0.6c-1.2,0.3 -2.2,1.3 -2.5,2.5c-0.6,2.2 -0.6,6.8 -0.6,6.8c0,0 0,4.6 0.6,6.8c0.3,1.2 1.3,2.2 2.5,2.5c2.2,0.6 11.1,0.6 11.1,0.6c0,0 8.9,0 11.1,-0.6c1.2,-0.3 2.2,-1.3 2.5,-2.5c0.6,-2.2 0.6,-6.8 0.6,-6.8c0,0 0,-4.6 -0.6,-6.8Zm-16.4,11.6l0,-8.8l7,4.4l-7,4.4Z"
+                                                style="fill:#fff;fill-rule:nonzero;"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="show-for-sr">External link Destatis Youtube Channel (Opens new window)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon" href="https://www.xing.com/jobs/statistisches-bundesamt"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="footer_xing" fill="#FFFFFF" fill-rule="nonzero">
+                                                <g id="xing">
+                                                    <path
+                                                        d="M22.5,43 C33.8218374,43 43,33.8218374 43,22.5 C43,11.1781626 33.8218374,2 22.5,2 C11.1781626,2 2,11.1781626 2,22.5 C2,33.8218374 11.1781626,43 22.5,43 Z M22.5,45 C10.0735931,45 0,34.9264069 0,22.5 C0,10.0735931 10.0735931,0 22.5,0 C34.9264069,0 45,10.0735931 45,22.5 C45,34.9264069 34.9264069,45 22.5,45 Z M19.0769412,17.5403303 L21,20.9739148 C20.9218472,21.1180057 19.9172784,22.9427505 17.9864988,26.4477707 C17.7755316,26.8159656 17.5214838,27 17.2244787,27 L14.4221912,27 C14.2579595,27 14.1369727,26.932054 14.0586146,26.7959518 C13.9804618,26.6598496 13.9804618,26.515969 14.0586146,26.3634269 L17.0251748,20.9855615 C17.0328956,20.9855615 17.0328956,20.9815671 17.0251748,20.9734523 L15.1374347,17.6242537 C15.0435939,17.448208 15.0397335,17.3000387 15.125607,17.179998 C15.196039,17.0600834 15.3210505,17 15.500806,17 L18.3031345,17 C18.6157045,17 18.8736948,17.18004 19.0769412,17.5403303 Z M30.9306175,13.6288024 L24.2739171,24.9226396 L24.2739171,24.9346676 L28.509947,32.3710282 C28.602457,32.5324746 28.6066519,32.6814695 28.5226202,32.8185634 C28.4383235,32.9394364 28.3041288,33 28.1192855,33 L25.1059329,33 C24.7529377,33 24.4754519,32.818521 24.2739171,32.4557748 L20,24.9346252 C20.1513278,24.6766159 22.3827392,20.8798724 26.6945876,13.5440981 C26.9047332,13.1813096 27.1736083,13 27.5015219,13 L30.5398236,13 C30.7247994,13.0001694 30.8547549,13.060733 30.9306175,13.181479 C31.0231275,13.3104413 31.0231275,13.4595632 30.9306175,13.6288024 Z"
+                                                        id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="show-for-sr">External link Destatis (Statistisches Bundesamt) at Xing (Opens new window)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon"
+                                    href="https://de.linkedin.com/company/statistisches-bundesamt-destatis"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <svg width="45" height="45" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                        clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                        <g fill="#fff" fill-rule="nonzero">
+                                            <path
+                                                d="M22.45 45C10.05 45 .05 34.9.05 22.5S10.05 0 22.45 0c12.4 0 22.5 10.1 22.5 22.5.1 12.4-10 22.5-22.5 22.5zm0-43c-11.3 0-20.4 9.2-20.4 20.5S11.15 43 22.45 43c11.3 0 20.5-9.2 20.5-20.5S33.85 2 22.45 2z" />
+                                            <path
+                                                d="M32.85 23.3V31h-4.5v-7.2c0-1.8-.6-3-2.3-3-1.2 0-2 .8-2.3 1.6-.1.3-.1.7-.1 1.1V31h-4.4V17.5h4.5v1.9c.6-.9 1.7-2.2 4-2.2 2.9 0 5.1 1.9 5.1 6.1zM14.55 11c-1.5 0-2.5 1-2.5 2.4 0 1.3 1 2.3 2.5 2.3 1.6 0 2.5-1 2.5-2.3 0-1.4-1-2.4-2.5-2.4zm-2.3 20h4.5V17.5h-4.5V31z" />
+                                        </g>
+                                    </svg>
+                                    <span class="show-for-sr">External link Destatis (Statistisches Bundesamt) at LinkedIn (Opens new window)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <nav class="top-bar grid-container footer-meta stacked-for-medium">
+                <div class="top-bar-left">
+                    <ul class="vertical medium-horizontal menu">
+                        <li class="menu-text"><small><a
+                                    href="https://www.destatis.de/EN/Service/Legal-Notice/_node.html">Legal Notice</a></small>
+                        </li>
+                        <li class="menu-text"><small><a
+                                    href="https://www.destatis.de/EN/Service/Privacy-Policy/_node.html">Privacy Policy</a></small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li class="menu-text">
+                            <small class="js-copyright">&nbsp;</small>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="/inflationsrechner/js/vendor/jquery.min.js"></script>
+    <script src="/inflationsrechner/js/vendor/what-input.min.js"></script>
+    <script src="/inflationsrechner/js/vendor/foundation.min.js"></script>
+    <script src="/inflationsrechner/js/vendor/highcharts.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/series-label.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/data.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/exporting.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/export-data.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/accessibility.js" defer></script>
+    <script src="/inflationsrechner/js/vendor/modules/offline-exporting.js" defer></script>
+    <script src="js/vendor/destatis_theme_en.min.js" defer></script>
+    <script src="js/app.min.js" defer></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/inflationsrechner/sw.js');
+        }
+    </script>
+    <!-- Matomo -->
+    <noscript><p><img src="//piwik.itzbund.de/pwk/js/?idsite=58&rec=1" style="border:0;" alt="" /></p></noscript>
+</body>
+
+</html>
